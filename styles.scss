@@ -9,9 +9,27 @@
 body {
     background-image: url(fondomobile.jpg);
 }
+/*--------------------------------------------------------------------------------------------------------*/
 
+.navbar{
+    ul{
+        margin-left: auto;
+        width: 100%;
+    }  
 
-/*    RESPONSIVE    */ 
+    li{ 
+        margin-left: 3%;
+    }  
+
+    .nav-item{
+        width: 12rem;
+    }
+
+    a{
+        width: 12rem;
+        
+    }
+}
 
 
 @media (min-width: 576px) {
@@ -51,19 +69,18 @@ body {
         row-gap: 10%;
     }
 
-
     .index__texto{ 
         height: auto;
         width: auto;
         grid-area: uno;
         
         p{ 
-            text-align: left;
+            text-align: center;
         }
         h3{ 
             font-size: 5em;
             font-weight: 900;
-            text-align: left;
+            text-align: center;
 
         }
     }
@@ -89,15 +106,9 @@ body {
             margin-top: 10%;
         }
     }
-
-
-
 }
 
-
-
 @media (max-width: 576px) {
-
 
     .index__banner{ 
         display: none;
@@ -117,14 +128,15 @@ body {
 
 }
 
-/*    RESPONSIVE    */ 
+
+/*---------------------------------------RESPONSIVE---------------------------------------*/ 
+
 
 main {
     padding: 0 5% 0 5%;
     display: flex;
     flex-direction: row;
 }
-
 
     h1 {
         font-size: 3rem;
@@ -192,7 +204,6 @@ div > img {
     background-color: rgba(147, 136, 136, 0.183);
     padding: 0 5% 0 5%;
 
-
     h4{
         font-size: 2.5rem;
         margin-bottom: 10%;
@@ -210,7 +221,10 @@ div > img {
     }
 }
 
-/* FOOTER */
+
+/*---------------------------------------FOOTER---------------------------------------*/
+
+
 .row {
     margin-top: 10%;
     height: 13rem;
@@ -239,4 +253,336 @@ div > img {
 #footer__iconos{ 
     font-size: 1.3em;
     z-index: 1;
+}
+
+
+/*---------------------------------------TRATAMIENTOS---------------------------------------*/ 
+
+
+@media (max-width: 576px) {
+    .tratamientos__wrapper{ 
+        background-color: rgba(255, 255, 255, 0.692);
+        color: rgb(1, 1, 1);
+        font-weight: 800;
+    }
+}
+
+.tratamientos__wrapper{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    row-gap: 5%;
+    column-gap: 3%;
+    background-color: rgba(147, 136, 136, 0.183);
+    padding: 5%;
+    margin: 5%;
+
+    img{ 
+        border-radius: 50%;
+        margin-bottom: 5%;
+        padding: 10%;
+        transition: transform .5s;
+    }
+    img:hover{
+        transform: scale(1.2);
+        
+    }
+    div{ 
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        margin: auto;
+        border-radius: 12%;
+        background-color:rgba(42, 42, 42, 0.183);
+        margin-bottom: 5%;
+    }    
+    h2{ 
+        margin-bottom: 10%;
+        width: 100%;
+    }
+}
+
+
+/*---------------------------------------LISTA DE TRATAMIENTOS---------------------------------------*/
+
+
+$fondo: rgb(42, 42, 42, 0.183);
+$margenes: 0% 5% 0 5%;
+$imagen: 50%;
+
+
+/*---------------------------------------ABDOMEN---------------------------------------*/
+
+
+.tratamiento__flacidezWrapper{ 
+    background-color: $fondo;
+    margin: $margenes;
+    padding: 5%;
+
+    img{ width: $imagen;
+        height: $imagen;
+    }
+
+    p{ 
+        margin-top: 3%;
+        font-size: 1.5rem;
+    }
+}
+
+
+/*---------------------------------------ACNE---------------------------------------*/
+
+
+.tratamiento__acneWrapper{ 
+    background-color: $fondo;
+    margin: $margenes;
+    padding: 5%;
+
+    img{ width: $imagen;
+        height: $imagen;
+    }
+
+    p{ 
+        margin-top: 3%;
+        font-size: 1.5rem;
+    }
+}
+
+
+/*---------------------------------------ARRUGAS---------------------------------------*/
+
+
+.tratamiento__arrugasWrapper{ 
+    background-color: $fondo;
+    margin: $margenes;
+    padding: 5%;
+
+    img{ width: $imagen;
+        height: $imagen;
+    }
+
+    p{ 
+        margin-top: 3%;
+        font-size: 1.5rem;
+    }
+}
+
+
+/*---------------------------------------ESTRIAS---------------------------------------*/
+
+
+.tratamiento__estriasWrapper{ 
+    background-color: $fondo;
+    margin: $margenes;
+    padding: 5%;
+
+    img{ width: $imagen;
+        height: $imagen;
+    }
+
+    p{ 
+        margin-top: 3%;
+        font-size: 1.5rem;
+    }
+}
+
+/*---------------------------------------LABIOS---------------------------------------*/
+
+.tratamiento__labiosWrapper{ 
+    background-color: $fondo;
+    margin: $margenes;
+    padding: 5%;
+
+    img{ width: $imagen;
+        height: $imagen;
+    }
+
+    p{ 
+        margin-top: 3%;
+        font-size: 1.5rem;
+    }
+}
+
+
+/*---------------------------------------VARICES---------------------------------------*/
+
+.tratamiento__varicesWrapper{ 
+    background-color: $fondo;
+    margin: $margenes;
+    padding: 5%;
+
+    img{ width: $imagen;
+        height: $imagen;
+    }
+
+    p{ 
+        margin-top: 3%;
+        font-size: 1.5rem;
+    }
+}
+
+
+/*---------------------------------------PAPADA---------------------------------------*/
+
+
+.tratamiento__papadaWrapper{ 
+    background-color: $fondo;
+    margin: $margenes;
+    padding: 5%;
+
+    img{ width: $imagen;
+        height: $imagen;
+    }
+
+    p{ 
+        margin-top: 3%;
+        font-size: 1.5rem;
+    }
+}
+
+
+/*---------------------------------------NUESTROS MEDICOS---------------------------------------*/
+
+
+@media (max-width: 576px) {
+    .medicos__wrapper{ 
+        color: white;
+    }
+
+}
+
+
+.medicos__wrapper{ 
+    display: flex;
+    padding: 5%;
+    margin: 5%;
+    background-color: $fondo;
+
+    h1{ 
+        width: 100%;
+        margin-bottom: -5%;
+        margin-top: -3%;
+    }
+
+    p{ 
+        padding: 5%;
+    }
+}
+
+.card{ 
+    margin-bottom: 8%;
+}
+
+.card-text{ 
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.card-title{ 
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+
+/*---------------------------------------CONTACTO---------------------------------------  */
+
+
+@media (max-width: 576px) {
+    .contacto__wrapper{ 
+        background-color: white;
+    }
+
+    form{
+        margin-bottom: 5%;
+    }
+}
+.contacto__wrapper{ 
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-flow: column;
+
+    form{ 
+        width: 80%;
+        margin: auto;
+        margin-top: -5%;
+    }
+    .contacto__adress{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 10%;
+        margin: auto;
+
+        ul{ 
+            margin-top: 10%;
+        }
+
+        h3{ 
+            font-size: 2rem;
+            margin-bottom: 5%;
+
+        }
+        li{ 
+            list-style: none;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+
+/* ---------------------------------------PROMOCIONES---------------------------------------*/
+
+
+@media (max-width: 576px) {
+    .promociones__wrapper{ 
+        background-color: white;
+    }
+}
+
+
+
+.promociones__wrapper{ 
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    h1{ 
+        width: 100%;
+    }
+    div{
+        width: 20em;
+        margin-bottom: 5%;
+    }
+    h2{ 
+        font-size: 1.3rem;
+        width: auto;
+    }
+    a{     
+        color: rgba(167, 228, 161, 0.83);
+    }
+    
+    img{
+        width: 80%;
+        height: 80%;    
+        border-top-left-radius: 30%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border: 1px solid $fondo
+        }
+    
+    p{ 
+            width: 100%;
+            margin: auto;
+            margin-top: 5%;
+        }
+    .promociones__paragraph{ 
+        width: 100%;
+    }
 }

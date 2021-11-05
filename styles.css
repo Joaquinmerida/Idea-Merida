@@ -10,7 +10,21 @@ body {
   background-image: url(fondomobile.jpg);
 }
 
-/*    RESPONSIVE    */
+/*--------------------------------------------------------------------------------------------------------*/
+.navbar ul {
+  margin-left: auto;
+  width: 100%;
+}
+.navbar li {
+  margin-left: 3%;
+}
+.navbar .nav-item {
+  width: 10rem;
+}
+.navbar a {
+  width: 10rem;
+}
+
 @media (min-width: 576px) {
   body {
     background-image: url(/imagenes/background.jpg);
@@ -52,12 +66,12 @@ body {
     grid-area: uno;
   }
   .index__texto p {
-    text-align: left;
+    text-align: center;
   }
   .index__texto h3 {
     font-size: 5em;
     font-weight: 900;
-    text-align: left;
+    text-align: center;
   }
 
   .index__texto3 {
@@ -99,7 +113,7 @@ body {
     margin-top: 20%;
   }
 }
-/*    RESPONSIVE    */
+/*---------------------------------------RESPONSIVE---------------------------------------*/
 main {
   padding: 0 5% 0 5%;
   display: flex;
@@ -179,7 +193,7 @@ div > img {
   font-size: 1.2rem;
 }
 
-/* FOOTER */
+/*---------------------------------------FOOTER---------------------------------------*/
 .row {
   margin-top: 10%;
   height: 13rem;
@@ -204,4 +218,276 @@ div > img {
 #footer__iconos {
   font-size: 1.3em;
   z-index: 1;
+}
+
+/*---------------------------------------TRATAMIENTOS---------------------------------------*/
+@media (max-width: 576px) {
+  .tratamientos__wrapper {
+    background-color: rgba(255, 255, 255, 0.692);
+    color: #010101;
+    font-weight: 800;
+  }
+}
+.tratamientos__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+  row-gap: 5%;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  background-color: rgba(147, 136, 136, 0.183);
+  padding: 5%;
+  margin: 5%;
+}
+.tratamientos__wrapper img {
+  border-radius: 50%;
+  margin-bottom: 5%;
+  padding: 10%;
+  transition: transform 0.5s;
+}
+.tratamientos__wrapper img:hover {
+  transform: scale(1.2);
+}
+.tratamientos__wrapper div {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin: auto;
+  border-radius: 12%;
+  background-color: rgba(42, 42, 42, 0.183);
+  margin-bottom: 5%;
+}
+.tratamientos__wrapper h2 {
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+/*---------------------------------------LISTA DE TRATAMIENTOS---------------------------------------*/
+/*---------------------------------------ABDOMEN---------------------------------------*/
+.tratamiento__flacidezWrapper {
+  background-color: rgba(42, 42, 42, 0.183);
+  margin: 0% 5% 0 5%;
+  padding: 5%;
+}
+.tratamiento__flacidezWrapper img {
+  width: 50%;
+  height: 50%;
+}
+.tratamiento__flacidezWrapper p {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------ACNE---------------------------------------*/
+.tratamiento__acneWrapper {
+  background-color: rgba(42, 42, 42, 0.183);
+  margin: 0% 5% 0 5%;
+  padding: 5%;
+}
+.tratamiento__acneWrapper img {
+  width: 50%;
+  height: 50%;
+}
+.tratamiento__acneWrapper p {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------ARRUGAS---------------------------------------*/
+.tratamiento__arrugasWrapper {
+  background-color: rgba(42, 42, 42, 0.183);
+  margin: 0% 5% 0 5%;
+  padding: 5%;
+}
+.tratamiento__arrugasWrapper img {
+  width: 50%;
+  height: 50%;
+}
+.tratamiento__arrugasWrapper p {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------ESTRIAS---------------------------------------*/
+.tratamiento__estriasWrapper {
+  background-color: rgba(42, 42, 42, 0.183);
+  margin: 0% 5% 0 5%;
+  padding: 5%;
+}
+.tratamiento__estriasWrapper img {
+  width: 50%;
+  height: 50%;
+}
+.tratamiento__estriasWrapper p {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------LABIOS---------------------------------------*/
+.tratamiento__labiosWrapper {
+  background-color: rgba(42, 42, 42, 0.183);
+  margin: 0% 5% 0 5%;
+  padding: 5%;
+}
+.tratamiento__labiosWrapper img {
+  width: 50%;
+  height: 50%;
+}
+.tratamiento__labiosWrapper p {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------VARICES---------------------------------------*/
+.tratamiento__varicesWrapper {
+  background-color: rgba(42, 42, 42, 0.183);
+  margin: 0% 5% 0 5%;
+  padding: 5%;
+}
+.tratamiento__varicesWrapper img {
+  width: 50%;
+  height: 50%;
+}
+.tratamiento__varicesWrapper p {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------PAPADA---------------------------------------*/
+.tratamiento__papadaWrapper {
+  background-color: rgba(42, 42, 42, 0.183);
+  margin: 0% 5% 0 5%;
+  padding: 5%;
+}
+.tratamiento__papadaWrapper img {
+  width: 50%;
+  height: 50%;
+}
+.tratamiento__papadaWrapper p {
+  margin-top: 3%;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------------NUESTROS MEDICOS---------------------------------------*/
+@media (max-width: 576px) {
+  .medicos__wrapper {
+    color: white;
+  }
+}
+.medicos__wrapper {
+  display: flex;
+  padding: 5%;
+  margin: 5%;
+  background-color: rgba(42, 42, 42, 0.183);
+}
+.medicos__wrapper h1 {
+  width: 100%;
+  margin-bottom: -5%;
+  margin-top: -3%;
+}
+.medicos__wrapper p {
+  padding: 5%;
+}
+
+.card {
+  margin-bottom: 8%;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  color: white;
+  font-weight: bolder;
+}
+
+/*---------------------------------------CONTACTO---------------------------------------  */
+@media (max-width: 576px) {
+  .contacto__wrapper {
+    background-color: white;
+  }
+
+  form {
+    margin-bottom: 5%;
+  }
+}
+.contacto__wrapper {
+  margin: 5%;
+  padding: 5%;
+  display: flex;
+  flex-flow: column;
+}
+.contacto__wrapper form {
+  width: 80%;
+  margin: auto;
+  margin-top: -5%;
+}
+.contacto__wrapper .contacto__adress {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10%;
+  margin: auto;
+}
+.contacto__wrapper .contacto__adress ul {
+  margin-top: 10%;
+}
+.contacto__wrapper .contacto__adress h3 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+.contacto__wrapper .contacto__adress li {
+  list-style: none;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* ---------------------------------------PROMOCIONES---------------------------------------*/
+@media (max-width: 576px) {
+  .promociones__wrapper {
+    background-color: white;
+  }
+}
+.promociones__wrapper {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.promociones__wrapper h1 {
+  width: 100%;
+}
+.promociones__wrapper div {
+  width: 20em;
+  margin-bottom: 5%;
+}
+.promociones__wrapper h2 {
+  font-size: 1.3rem;
+  width: auto;
+}
+.promociones__wrapper a {
+  color: rgba(167, 228, 161, 0.83);
+}
+.promociones__wrapper img {
+  width: 80%;
+  height: 80%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 1px solid rgba(42, 42, 42, 0.183);
+}
+.promociones__wrapper p {
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+}
+.promociones__wrapper .promociones__paragraph {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
