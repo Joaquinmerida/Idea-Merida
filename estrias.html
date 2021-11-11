@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,18 +14,18 @@
     <script src="/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-</head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Principal</a>
                         </li>
@@ -58,27 +59,34 @@
             </div>
         </nav>
     </header>
+    <!-- XXXXXXXXXXXXXXXXXXX EMPIEZA MAIN XXXXXXXXXXXXXXXXXXXXXXX -->
+    <main>
+        <div class="tratamiento__estriasWrapper">
+            <h1>Tratamiento para redducción de estrias</h1>
+            <div class="tratamiento">
+            <img src="/imagenes/ESTRIAS.jpeg" alt="imagen de estrias">
+            </div>
+            <p>Las Estrías son cicatrices de la piel producidas por el estiramiento excesivo de las capas más
+                profundas.
+                Los tratamientos actuales no logran eliminar las estrías al 100%, pero sí disminuyen la
+                aparición de las mismas, su progresión y mejoran la estructura y calidad de la piel.
+                Utilizamos diversas técnicas, como Peelings químicos y mecánicos, Mesoterapia, Carboxiterapia y
+                otros según diagnostico.</p>
+            <a href="/tratamiento.html" class="btn btn-success btn-sm opacity-75">Volver a la lista de Tratamientos</a>
+        </div>
+    </main>
     
-<div class="tratamiento__estriasWrapper">
-    <h1>Tratamiento para redducción de estrias</h1>
-    <img src="/imagenes/ESTRIAS.jpeg" alt="imagen de estrias">
-    <p>Las Estrías son cicatrices de la piel producidas por el estiramiento excesivo de las capas más
-        profundas.
-        Los tratamientos actuales no logran eliminar las estrías al 100%, pero sí disminuyen la
-        aparición de las mismas, su progresión y mejoran la estructura y calidad de la piel.
-        Utilizamos diversas técnicas, como Peelings químicos y mecánicos, Mesoterapia, Carboxiterapia y
-        otros según diagnostico.</p>
-        <a href="/tratamiento.html" class="btn btn-success btn-sm opacity-75">Volver a la lista de Tratamientos</a>
-</div>
+    <!-- XXXXXXXXXXXXXXXXXXX TERMINA MAIN XXXXXXXXXXXXXXXXXXXXXXX -->
+    <!-- XXXXXXXXXXXXXXXXXXX EMPIEZA FOOTER XXXXXXXXXXXXXXXXXXXXXXX -->
 
     <footer>
         <div class="container-fluid">
             <div class="row align-content-center">
                 <div class="col-4"><a href="/index.html"><img src="/imagenes/logo_horizontal1-2.ico" alt="logo"></a>
                 </div>
-                <section class="col-4" id="footer__logo">
+                <div class="col-4" id="footer__logo">
                     <p>Agenda tu consulta <a href="/contacto.html">AQUI</a> </p>
-                </section>
+                </div>
                 <div class="col-4" id="footer__iconos">
                     <a href="https://es-la.facebook.com/CentroMedicoEsteticoSB/"><i
                             class="fab fa-facebook-square"></i></a>
@@ -87,7 +95,9 @@
                 </div>
             </div>
         </div>
+
     </footer>
 
 </body>
+
 </html>

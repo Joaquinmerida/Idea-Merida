@@ -12,17 +12,7 @@ body {
 
 /*--------------------------------------------------------------------------------------------------------*/
 .navbar ul {
-  margin-left: auto;
   width: 100%;
-}
-.navbar li {
-  margin-left: 3%;
-}
-.navbar .nav-item {
-  width: 10rem;
-}
-.navbar a {
-  width: 10rem;
 }
 
 @media (min-width: 576px) {
@@ -87,13 +77,19 @@ body {
     grid-area: dos;
     align-self: flex-end;
     margin-top: 0%;
+    margin: 5% 5% 10% 5%;
+    padding: 5%;
   }
-  .index__texto2 h3 {
-    font-size: 5em;
+  .index__texto2 h4 {
+    padding: 5%;
+  }
+  .index__texto2 h5 {
+    font-size: 2em;
+    margin-top: 2%;
   }
   .index__texto2 p {
     font-size: 1.4em;
-    margin-top: 10%;
+    padding: 8%;
   }
 }
 @media (max-width: 576px) {
@@ -147,12 +143,11 @@ h1 {
 }
 
 .index__banner {
-  margin-left: -20%;
+  width: 100%;
 }
 
 #banner {
-  text-align: justify;
-  width: 120%;
+  width: 100%;
   height: 150px;
 }
 
@@ -265,6 +260,10 @@ div > img {
 }
 
 /*---------------------------------------LISTA DE TRATAMIENTOS---------------------------------------*/
+.imagen {
+  width: 100%;
+}
+
 /*---------------------------------------ABDOMEN---------------------------------------*/
 .tratamiento__flacidezWrapper {
   background-color: rgba(42, 42, 42, 0.183);
@@ -332,7 +331,7 @@ div > img {
   padding: 5%;
 }
 .tratamiento__labiosWrapper img {
-  width: 50%;
+  width: 100%;
   height: 50%;
 }
 .tratamiento__labiosWrapper p {
@@ -424,7 +423,7 @@ div > img {
   flex-flow: column;
 }
 .contacto__wrapper form {
-  width: 80%;
+  width: 85%;
   margin: auto;
   margin-top: -5%;
 }

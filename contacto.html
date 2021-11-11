@@ -25,7 +25,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Principal</a>
                         </li>
@@ -59,45 +59,48 @@
             </div>
         </nav>
     </header>
+        <!-- XXXXXXXXXXXXXXXXXXX EMPIEZA FORM XXXXXXXXXXXXXXXXXXXXXXX -->
 
+        <div class="contacto__wrapper">
 
-    <div class="contacto__wrapper">
+            <form action="#">
+                <h2>Agendá tu consulta</h2>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Email donde querés recibir la información">
+                </div>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Tratamiento</option>
+                    <option>Flacidez de Abdomen</option>
+                    <option>Reducción de acné</option>
+                    <option>Reducción de arrugas</option>
+                    <option>Reducción de estrias</option>
+                    <option>Volumen de labios</option>
+                    <option>Reducción de papada</option>
+                    <option>Reducción de várices</option>
+                </select>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Informacion extra que puedas
+                        brindarnos</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button class="btn btn-secondary btn-success" type="submit">Enviar</button>
+                <button class="btn btn-secondary btn-dark" type="reset">Reiniciar forumulario</button>
+            </form>
 
-        <form action="#">
-            <h2>Agendá tu consulta</h2>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="Email donde querés recibir la información">
-            </div>
-            <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Tratamiento</option>
-                <option>Flacidez de Abdomen</option>
-                <option>Reducción de acné</option>
-                <option>Reducción de arrugas</option>
-                <option>Reducción de estrias</option>
-                <option>Volumen de labios</option>
-                <option>Reducción de papada</option>
-                <option>Reducción de várices</option>
-            </select>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Informacion extra que puedas brindarnos</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button class="btn btn-secondary btn-success" type="submit">Enviar</button>
-        <button class="btn btn-secondary btn-dark" type="reset">Reiniciar forumulario</button>
-        </form>
+    <!-- XXXXXXXXXXXXXXXXXXX TERMINA FORM XXXXXXXXXXXXXXXXXXXXXXX -->
+    <!-- XXXXXXXXXXXXXXXXXXX EMPIEZA FOOTER XXXXXXXXXXXXXXXXXXXXXXX -->
 
-        <div class="contacto__adress align-self-center">
+    <div class="contacto__adress align-self-center">
         <ul>
             <li>Ciudad de Canelones, Treinta y tres 631</li>
             <li>Montevideo, Nostrum Bay</li>
             <li>Ciudad de Trinidad</li>
         </ul>
-        </div>
-
     </div>
 
+    </div>
 
 
     <footer>
@@ -105,9 +108,9 @@
             <div class="row align-content-center">
                 <div class="col-4"><a href="/index.html"><img src="/imagenes/logo_horizontal1-2.ico" alt="logo"></a>
                 </div>
-                <section class="col-4" id="footer__logo">
+                <div class="col-4" id="footer__logo">
                     <p>Agenda tu consulta <a href="/contacto.html">AQUI</a> </p>
-                </section>
+                </div>
                 <div class="col-4" id="footer__iconos">
                     <a href="https://es-la.facebook.com/CentroMedicoEsteticoSB/"><i
                             class="fab fa-facebook-square"></i></a>
@@ -116,6 +119,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
 
 
