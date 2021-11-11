@@ -13,6 +13,7 @@ body {
 /*--------------------------------------------------------------------------------------------------------*/
 .navbar ul {
   width: 100%;
+  margin: auto;
 }
 
 @media (min-width: 576px) {
@@ -106,6 +107,8 @@ body {
   }
 
   .index__texto2 {
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 20%;
   }
 }
@@ -269,6 +272,7 @@ div > img {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
+  height: 100%;
 }
 .tratamiento__flacidezWrapper img {
   width: 50%;
@@ -284,6 +288,7 @@ div > img {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
+  height: 100%;
 }
 .tratamiento__acneWrapper img {
   width: 50%;
@@ -299,6 +304,7 @@ div > img {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
+  height: 100%;
 }
 .tratamiento__arrugasWrapper img {
   width: 50%;
@@ -314,6 +320,7 @@ div > img {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
+  height: 100%;
 }
 .tratamiento__estriasWrapper img {
   width: 50%;
@@ -329,9 +336,10 @@ div > img {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
+  height: 100%;
 }
 .tratamiento__labiosWrapper img {
-  width: 100%;
+  width: 50%;
   height: 50%;
 }
 .tratamiento__labiosWrapper p {
@@ -344,6 +352,7 @@ div > img {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
+  height: 100%;
 }
 .tratamiento__varicesWrapper img {
   width: 50%;
@@ -359,6 +368,7 @@ div > img {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
+  height: 100%;
 }
 .tratamiento__papadaWrapper img {
   width: 50%;
