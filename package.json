@@ -2,9 +2,9 @@
   "devDependencies": {
     "nodemon": "^2.0.14"
   },
-  "name": "a",
+  "name": "centromedicosb",
   "version": "1.0.0",
-  "description": "a",
+  "description": "Centro de medicina estetica",
   "main": "index.js",
   "dependencies": {
     "balanced-match": "^1.0.2",
