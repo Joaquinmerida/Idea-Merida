@@ -120,12 +120,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Joaquinmerida/Ideaa-Merida.git"
+    "url": "git+https://github.com/Joaquinmerida/Idea-Merida.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Joaquinmerida/Ideaa-Merida/issues"
+    "url": "https://github.com/Joaquinmerida/Idea-Merida/issues"
   },
-  "homepage": "https://github.com/Joaquinmerida/Ideaa-Merida#readme"
+  "homepage": "https://github.com/Joaquinmerida/Idea-Merida#readme"
 }

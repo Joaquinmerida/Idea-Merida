@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(fondomobile.jpg);
+  background-image: url(/imagenes/fondomobile.jpg);
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
@@ -40,46 +40,44 @@ body {
     height: 200px;
   }
 
-  .index__wrapper {
+  .index {
     margin: 5%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "uno tres" "dos dos";
-    -moz-column-gap: 2%;
-         column-gap: 2%;
-    row-gap: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
   }
 
   .index__texto {
     height: auto;
     width: auto;
-    grid-area: uno;
   }
   .index__texto p {
     text-align: center;
   }
-  .index__texto h3 {
-    font-size: 5em;
+  .index__texto h2 {
+    font-size: 3em;
     font-weight: 900;
     text-align: center;
   }
 
   .index__texto3 {
-    grid-area: tres;
-    width: auto;
-    height: auto;
+    width: 40%;
+    border-radius: 8em;
+    min-width: 25rem;
+    justify-content: center;
+    padding: 3%;
+    margin: 5%;
   }
   .index__texto3 h3 {
     margin-bottom: 10%;
   }
 
   .index__texto2 {
-    grid-area: dos;
-    align-self: flex-end;
+    justify-content: center;
     margin-top: 0%;
     margin: 5% 5% 10% 5%;
-    padding: 5%;
+    padding: 2%;
   }
   .index__texto2 h4 {
     padding: 5%;
@@ -110,6 +108,13 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 20%;
+    color: black;
+    font-weight: bolder;
+  }
+
+  .index__texto3 {
+    margin-top: 20%;
+    margin-bottom: 5%;
   }
 }
 /*---------------------------------------RESPONSIVE---------------------------------------*/
@@ -192,23 +197,27 @@ div > img {
 }
 
 /*---------------------------------------FOOTER---------------------------------------*/
-.row {
-  margin-top: 10%;
-  height: 13rem;
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   background-color: #212529;
-  color: #cbccce;
-  text-align: center;
+  height: 15rem;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.row i {
-  margin-right: 2rem;
-  font-size: 2.5em;
+.footer li {
+  list-style: none;
+}
+.footer a {
   color: rgba(167, 228, 161, 0.83);
-  margin-top: 3%;
 }
-.row i:hover {
-  color: rgba(55, 100, 51, 0.83);
+.footer a:hover {
+  background-color: rgba(164, 164, 164, 0.204);
 }
-.row img {
+
+#footer__logo {
   height: 4.5rem;
   width: 4.5rem;
 }
@@ -220,13 +229,13 @@ div > img {
 
 /*---------------------------------------TRATAMIENTOS---------------------------------------*/
 @media (max-width: 576px) {
-  .tratamientos__wrapper {
+  .tratamientos {
     background-color: rgba(255, 255, 255, 0.692);
     color: #010101;
     font-weight: 800;
   }
 }
-.tratamientos__wrapper {
+.tratamientos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -239,16 +248,16 @@ div > img {
   padding: 5%;
   margin: 5%;
 }
-.tratamientos__wrapper img {
+.tratamientos img {
   border-radius: 50%;
   margin-bottom: 5%;
   padding: 10%;
   transition: transform 0.5s;
 }
-.tratamientos__wrapper img:hover {
+.tratamientos img:hover {
   transform: scale(1.2);
 }
-.tratamientos__wrapper div {
+.tratamientos div {
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
@@ -257,7 +266,7 @@ div > img {
   background-color: rgba(42, 42, 42, 0.183);
   margin-bottom: 5%;
 }
-.tratamientos__wrapper h2 {
+.tratamientos h2 {
   margin-bottom: 10%;
   width: 100%;
 }
@@ -268,113 +277,113 @@ div > img {
 }
 
 /*---------------------------------------ABDOMEN---------------------------------------*/
-.tratamiento__flacidezWrapper {
+.tratamiento__flacidez {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
   height: 100%;
 }
-.tratamiento__flacidezWrapper img {
+.tratamiento__flacidez img {
   width: 50%;
   height: 50%;
 }
-.tratamiento__flacidezWrapper p {
+.tratamiento__flacidez p {
   margin-top: 3%;
   font-size: 1.5rem;
 }
 
 /*---------------------------------------ACNE---------------------------------------*/
-.tratamiento__acneWrapper {
+.tratamiento__acne {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
   height: 100%;
 }
-.tratamiento__acneWrapper img {
+.tratamiento__acne img {
   width: 50%;
   height: 50%;
 }
-.tratamiento__acneWrapper p {
+.tratamiento__acne p {
   margin-top: 3%;
   font-size: 1.5rem;
 }
 
 /*---------------------------------------ARRUGAS---------------------------------------*/
-.tratamiento__arrugasWrapper {
+.tratamiento__arrugas {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
   height: 100%;
 }
-.tratamiento__arrugasWrapper img {
+.tratamiento__arrugas img {
   width: 50%;
   height: 50%;
 }
-.tratamiento__arrugasWrapper p {
+.tratamiento__arrugas p {
   margin-top: 3%;
   font-size: 1.5rem;
 }
 
 /*---------------------------------------ESTRIAS---------------------------------------*/
-.tratamiento__estriasWrapper {
+.tratamiento__estrias {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
   height: 100%;
 }
-.tratamiento__estriasWrapper img {
+.tratamiento__estrias img {
   width: 50%;
   height: 50%;
 }
-.tratamiento__estriasWrapper p {
+.tratamiento__estrias p {
   margin-top: 3%;
   font-size: 1.5rem;
 }
 
 /*---------------------------------------LABIOS---------------------------------------*/
-.tratamiento__labiosWrapper {
+.tratamiento__labios {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
   height: 100%;
 }
-.tratamiento__labiosWrapper img {
+.tratamiento__labios img {
   width: 50%;
   height: 50%;
 }
-.tratamiento__labiosWrapper p {
+.tratamiento__labios p {
   margin-top: 3%;
   font-size: 1.5rem;
 }
 
 /*---------------------------------------VARICES---------------------------------------*/
-.tratamiento__varicesWrapper {
+.tratamiento__varices {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
   height: 100%;
 }
-.tratamiento__varicesWrapper img {
+.tratamiento__varices img {
   width: 50%;
   height: 50%;
 }
-.tratamiento__varicesWrapper p {
+.tratamiento__varices p {
   margin-top: 3%;
   font-size: 1.5rem;
 }
 
 /*---------------------------------------PAPADA---------------------------------------*/
-.tratamiento__papadaWrapper {
+.tratamiento__papada {
   background-color: rgba(42, 42, 42, 0.183);
   margin: 0% 5% 0 5%;
   padding: 5%;
   height: 100%;
 }
-.tratamiento__papadaWrapper img {
+.tratamiento__papada img {
   width: 50%;
   height: 50%;
 }
-.tratamiento__papadaWrapper p {
+.tratamiento__papada p {
   margin-top: 3%;
   font-size: 1.5rem;
 }
@@ -382,14 +391,14 @@ div > img {
 /*---------------------------------------NUESTROS MEDICOS---------------------------------------*/
 @media (max-width: 576px) {
   .medicos__wrapper {
-    color: white;
+    color: black;
+    background-color: white;
   }
 }
 .medicos__wrapper {
   display: flex;
   padding: 5%;
   margin: 5%;
-  background-color: rgba(42, 42, 42, 0.183);
 }
 .medicos__wrapper h1 {
   width: 100%;
@@ -481,7 +490,7 @@ div > img {
   width: auto;
 }
 .promociones__wrapper a {
-  color: rgba(167, 228, 161, 0.83);
+  color: red;
 }
 .promociones__wrapper img {
   width: 80%;
@@ -490,7 +499,8 @@ div > img {
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  border: 1px solid rgba(42, 42, 42, 0.183);
+  border: 5px solid red;
+  border-style: double;
 }
 .promociones__wrapper p {
   width: 100%;
